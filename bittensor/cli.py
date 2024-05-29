@@ -21,6 +21,7 @@ import argparse
 import bittensor
 from typing import List, Optional
 from .commands import (
+    AppraiseCommand,
     AutocompleteCommand,
     DelegateStakeCommand,
     DelegateUnstakeCommand,
@@ -99,6 +100,7 @@ COMMANDS = {
         "aliases": ["s", "subnet"],
         "help": "Commands for managing and viewing subnetworks.",
         "commands": {
+            "appraise": AppraiseCommand,
             "list": SubnetListCommand,
             "metagraph": MetagraphCommand,
             "lock_cost": SubnetLockCostCommand,

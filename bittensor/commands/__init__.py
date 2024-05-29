@@ -71,6 +71,7 @@ from .register import (
     RunFaucetCommand,
     SwapHotkeyCommand,
 )
+from .appraise import AppraiseCommand
 from .delegates import (
     NominateCommand,
     ListDelegatesCommand,
